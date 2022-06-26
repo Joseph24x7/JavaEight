@@ -21,7 +21,7 @@ pipeline{
             steps{
                 script{
                 	withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-				    	bat 'docker login -u joseph24x7 -p ${dockerhubpwd}'
+				    	bat 'docker login -u joseph24x7 -p $dockerhubpwd'
 				    }
                    bat 'docker push joseph24x7/java-eight-concepts'
                 }
