@@ -35,7 +35,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>JavaEightConcepts</finalName>
+		<finalName>java-eight-concepts</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
