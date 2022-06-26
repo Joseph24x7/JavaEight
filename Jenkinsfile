@@ -20,10 +20,7 @@ pipeline{
         stage("Push image to hub"){
             steps{
                 script{
-                	bat 'docker logout'
-	                withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhub-pwd')]) {
-					    bat 'docker login -u joseph24x7 -p ${dockerhub-pwd}'
-					}
+					bat 'docker login -u joseph24x7 -p Abcde12345'
 	                bat 'docker push joseph24x7/java-eight-concepts'
                 }
             }
